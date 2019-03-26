@@ -7605,7 +7605,7 @@ button.close {
       -ms-flex-align: center;
           align-items: center;
   max-width: 199px;
-  margin: 0 26px 25px 0;
+  margin: 0 23px 25px 23px;
 }
 
 .advantages-img img {
@@ -7771,5 +7771,21 @@ body {
 .main-title__subtitle {
   color: #fff;
   font-family: 'Square Sans Pro Bold';
+}
+
+.none {
+  display: none;
+}
+
+@media (max-width: 1199px) {
+  .main-nav__list li {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 992px) {
+  .main-nav__list li a {
+    padding: 0 22px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
