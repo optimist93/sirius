@@ -1,0 +1,104 @@
+@media (max-width: 1199px)
+	.main-nav
+		&__list
+			li
+				margin-right: 10px
+	.footer
+		.header
+			&-phone
+				float: right
+@media (max-width: 992px)
+	.header
+		&-phone
+			display: inline-block
+			float: right
+	.main-nav
+		&__list
+			li
+				a
+					padding: 0 22px
+	.slider
+		&-box
+			top: 0
+			width: 100%
+			height: 100%
+			margin-top: 0
+			padding-right: 200px
+			text-align: center
+		.main-title
+			margin: 0 auto
+			font-size: 26px
+		&-item
+			height: 300px
+		.more-link
+			display: block
+			margin: 0 auto
+		.arrow_left
+			left: 30px
+		.arrow_right
+			right: 30px
+@media (max-width: 767px)
+	.header,
+	.footer
+		.logo
+			display: inline-block
+			width: 100%
+			text-align: center
+		&-phone
+			display: block
+			float: none
+			width: 100%
+			text-align: center
+			&:before
+				content: none
+	.main-nav
+		&__burger
+			display: inline-block
+		&__list
+			position: absolute
+			left: 0
+			top: 26px
+			display: none
+			margin-top: 20px
+			padding-bottom: 20px
+			background-color: #000
+			width: 100%
+			z-index: 199
+			li
+				display: block
+				margin-right: 0
+				a
+					font-size: 25px
+	.slider
+		&-box
+			padding: 0 150px
+@media (max-width: 576px)
+	.header
+		.logo
+			display: block
+			width: 100%
+	.slider
+		.main-title
+			font-size: 22px
+			text-align: center
+			&__subtitle
+				font-size: 14px
+		.arrow
+			background: transparent
+			box-shadow: none
+		&-box
+			padding: 0 80px
+		.more-link
+			padding: 5px 17px 5px 17px
+	.partners
+		&-slider
+			max-width: 300px
+			margin: 0 auto
+@media (max-width: 460px)
+	.slider
+		.arrow_left
+			left: 0
+		.arrow_right
+			right: 0
+		&-box
+			padding: 0 40px

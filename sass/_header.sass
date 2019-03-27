@@ -1,0 +1,158 @@
+.header
+	padding: 17px 0 19px 0
+	&-phone
+		position: relative
+		display: block
+		margin-top: 25px
+		color: #231f20
+		font-family: 'Square Sans Pro Bold'
+		line-height: 28px
+		text-decoration: none
+		&:hover
+			color: #231f20
+			text-decoration: none
+		&:before
+			content: ''
+			position: absolute
+			left: -38px
+			display: block
+			width: 28px
+			height: 28px
+			background: url('../img/header/phone-icon.png')no-repeat
+.social
+	width: 229px
+	margin: 20px auto 0 auto
+	transform: translateX(-15px)
+	&-list
+		margin: 0 -11.5px
+		padding: 0
+		font-size: 0
+		list-style-type: none
+		li
+			display: inline-block
+			width: 40px
+			height: 40px
+			margin: 0 11.5px
+			font-size: 20px
+			border-radius: 50%
+			background-color: #f24841
+			a
+				position: relative
+				display: block
+				width: 40px
+				height: 40px
+				color: #fff
+				text-decoration: none
+				i
+					position: absolute
+					top: 50%
+					left: 50%
+					transform: translate(-50%, -50%)
+					display: block
+.main-nav
+	min-height: 49px
+	background: #000
+	&__list
+		margin: 0
+		padding: 0
+		text-align: center
+		line-height: 49px
+		list-style-type: none
+		li
+			display: inline-block
+			margin-right: 35px
+			&:last-child
+				margin-right: 0
+			a
+				display: block
+				padding: 0 42px
+				font-size: 16px
+				color: #fff
+				font-family: 'Square Sans Pro Medium'
+				text-transform: uppercase
+				text-decoration: none
+				transition: all 0.5s
+				&:hover
+					background-color: #f24841
+	&__burger
+		position: relative
+		display: none
+		width: 30px
+		height: 30px
+		margin-top: 5px
+		cursor: pointer
+		&-open
+			position: relative
+			top: 10px
+			span
+				position: absolute
+				&:nth-child(2)
+					display: none
+				&:first-child
+					transform: rotate(45deg)
+				&:last-child
+					transform: rotate(-45deg)
+		span
+			display: block
+			width: 100%
+			height: 2px
+			margin: 8px 0
+			background-color: #fff
+			transition: all 0.7s			
+.slider
+	position: relative
+	display: flex
+	&-item
+		max-width: 100%
+	&-box
+		position: absolute
+		left: 0
+		top: 50%
+		display: flex
+		align-items: flex-start
+		flex-direction: column
+		justify-content: center
+		width: 640px
+		height: 411px
+		padding-left: 200px
+		margin-top: -205.5px
+		background: rgba(0, 0, 0, 0.7)
+		&:after
+			content: ''
+			position: absolute
+			right: -50px
+			bottom: 0
+			width: 0
+			height: 0
+			border-top: 411px solid #000
+			border-right: 50px solid transparent
+			opacity: 0.7
+		.more-link
+			padding: 15px 38px 14px 37px
+			color: #fff
+			font-family: 'Square Sans Pro Bold'
+			background-color: #f24841
+			&:hover
+				text-decoration: none
+	.slick-track .slick-slide
+		outline: none
+	.arrow
+		display: flex
+		justify-content: center
+		align-items: center
+		position: absolute
+		width: 45px
+		height: 45px
+		box-shadow: 0 2px 21px rgba(10, 10, 10, 0.75)
+		background-color: #ffffff
+		color: #f24841
+		font-size: 25px
+		z-index: 100
+		&_right
+			right: 100px
+			top: 50%
+			margin-top: -22.5px
+		&_left
+			left: 100px
+			top: 50%
+			margin-top: -22.5px

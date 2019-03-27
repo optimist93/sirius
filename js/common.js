@@ -1,5 +1,15 @@
 $(document).ready(function() {
 
+	// mobile -menu
+	$('.main-nav__burger').on('click', function() {
+		$(this).toggleClass('main-nav__burger-open');
+		$('.main-nav__list').slideToggle(300, function() {
+			if($(this).css('display') === 'none') {
+				$(this).removeAttr('style');
+			}
+		});
+	});
+
 	$('.partners-slider').slick({
 		slidesToShow: 5,
 		slidesToScroll: 1,
@@ -16,6 +26,12 @@ $(document).ready(function() {
 				breakpoint: 770,
 				settings: {
 					slidesToShow: 2
+				}
+			},
+			{
+				breakpoint: 576,
+				settings: {
+					slidesToShow: 1
 				}
 			}
 		]
